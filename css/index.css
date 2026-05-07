@@ -1,0 +1,116 @@
+body {
+  background-color: #121212;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #22d3ee;
+  object-fit: cover;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #1f1f1f;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Name Header */
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #d1cecc;
+  margin-top: 30px;
+}
+
+/* Section Styling */
+
+section {
+  padding: 30px;
+  margin: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+/* Headings */
+
+h2 {
+  color: #00bfff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+
+#About {
+  text-align: center;
+}
+
+/* Experience Section */
+
+#Experience ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+}
+
+#Experience li {
+  list-style-type: none;
+  background-color: #2b2b2b;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Connect Section */
+
+#Connect ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+#Connect li {
+  list-style-type: none;
+}
+
+#Connect a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#Connect a:hover {
+  color: #00bfff;
+}
