@@ -114,3 +114,23 @@ h2 {
 #Connect a:hover {
   color: #00bfff;
 }
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+}
+
+#skills li {
+  list-style-type: none;
+  background-color: #2b2b2b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  padding: 30px;
+}
