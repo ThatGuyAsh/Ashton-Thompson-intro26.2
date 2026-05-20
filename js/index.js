@@ -45,3 +45,60 @@ for (let i = 0; i < skills.length; i++) {
 
   skillsList.appendChild(skill);
 }
+
+// Message Form
+
+const messageForm = document.getElementsByName("leave_message")[0];
+
+messageForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const usersName = event.target.usersName.value;
+
+  const usersEmail = event.target.usersEmail.value;
+
+  const usersMessage = event.target.usersMessage.value;
+
+  console.log(usersName, usersEmail, usersMessage);
+
+  // Messages Section
+
+  const messageSection = document.getElementById("messages");
+
+  const messageList = messageSection.querySelector("ul");
+
+  // New Message
+
+  const newMessage = document.createElement("li");
+
+  newMessage.innerHTML = `
+        <a href="mailto:${usersEmail}">${usersName}</a>
+        <span> ${usersMessage} </span>
+    `;
+
+  // Remove Button
+
+  const removeButton = document.createElement("button");
+
+  removeButton.innerText = "remove";
+
+  removeButton.type = "button";
+
+  removeButton.addEventListener("click", function () {
+    const entry = removeButton.parentNode;
+
+    entry.remove();
+  });
+
+  // Add Button To Message
+
+  newMessage.appendChild(removeButton);
+
+  // Add Message To List
+
+  messageList.appendChild(newMessage);
+
+  // Reset Form
+
+  messageForm.reset();
+});

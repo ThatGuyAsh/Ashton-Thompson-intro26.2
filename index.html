@@ -5,24 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Portfolio page for Ashton Thompson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< lesson-5
-  </head>
-
-  <body>
-    <h1>Ashton Thompson</h1>
-
-=======
     <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
     <nav>
       <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Connect">Connect</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#connect">Connect</a></li>
+        <li><a href="#leave-message">Leave a Message</a></li>
       </ul>
     </nav>
 
@@ -32,8 +26,7 @@
       alt="Photo of me Ashton T"
       class="profile-pic"
     />
->>>>>>> main
-    <section id="About">
+    <section id="about">
       <h2>About</h2>
       <p>
         I am an aspiring data analyst and content creator currently building my
@@ -46,7 +39,7 @@
       </p>
     </section>
 
-    <section id="Experience">
+    <section id="experience">
       <h2>Experience</h2>
       <ul>
         <li>Learning HTML and web development on Udemy</li>
@@ -60,13 +53,12 @@
       <ul></ul>
     </section>
 
-    <section id="Projects">
+    <section id="projects">
       <h2>Projects</h2>
       <ul></ul>
     </section>
 
->>>>>>> main
-    <section id="Connect">
+    <section id="connect">
       <h2>Connect</h2>
       <ul>
         <li>
@@ -78,6 +70,28 @@
           >
         </li>
       </ul>
+    </section>
+
+    <section id="leave-message">
+      <h2>Leave a Message</h2>
+
+      <form name="leave_message">
+        <label for="usersName">Name:</label><br />
+        <input type="text" name="usersName" required /><br /><br />
+
+        <label for="usersEmail">Email:</label><br />
+        <input type="email" name="usersEmail" required /><br /><br />
+
+        <label for="usersMessage">Message:</label><br />
+        <textarea name="usersMessage" required></textarea><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
     </section>
     <script src="js/index.js"></script>
   </body>
