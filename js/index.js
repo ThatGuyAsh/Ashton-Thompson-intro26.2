@@ -132,4 +132,12 @@ fetch("https://api.github.com/users/ThatGuyAsh/repos")
 
   .catch((error) => {
     console.log("Error fetching repositories:", error);
+
+    const projectSection = document.getElementById("projects");
+
+    const errorMessage = document.createElement("p");
+
+    errorMessage.innerText = "Sorry, there was a problem loading the projects.";
+
+    projectSection.appendChild(errorMessage);
   });
