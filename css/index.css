@@ -71,20 +71,20 @@ h2 {
 
 /* About Section */
 
-#About {
+#about {
   text-align: center;
 }
 
 /* Experience Section */
 
-#Experience ul {
+#experience ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 0;
 }
 
-#Experience li {
+#experience li {
   list-style-type: none;
   background-color: #2b2b2b;
   padding: 15px;
@@ -94,25 +94,25 @@ h2 {
 
 /* Connect Section */
 
-#Connect ul {
+#connect ul {
   display: flex;
   gap: 20px;
   padding: 0;
 }
 
-#Connect li {
+#connect li {
   list-style-type: none;
 }
 
-#Connect a {
+#connect a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-#Connect a:hover {
-  color: #00bfff;
+#connect a:hover {
+  color: #a855f7;
 }
 
 #skills ul {
@@ -129,6 +129,61 @@ h2 {
   border-radius: 8px;
   color: white;
   font-weight: bold;
+}
+
+#leave-message form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+#leave-message input,
+#leave-message textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+#leave-message button {
+  width: 150px;
+  padding: 10px;
+  background-color: #22d3ee;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#leave-message button:hover {
+  background-color: #a855f7;
+  color: white;
+}
+
+#messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#messages li {
+  background-color: #2b2b2b;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#messages a {
+  color: #22d3ee;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#messages button {
+  margin-left: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 footer {
