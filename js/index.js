@@ -1,8 +1,6 @@
 // Footer
 
-const footer = document.createElement("footer");
-
-document.body.appendChild(footer);
+const footer = document.querySelector("footer");
 
 // Date
 
@@ -102,3 +100,44 @@ messageForm.addEventListener("submit", function (event) {
 
   messageForm.reset();
 });
+
+// GitHub Fetch API
+
+fetch("https://api.github.com/users/ThatGuyAsh/repos")
+  .then((response) => response.json())
+
+  .then((repositories) => {
+    console.log(repositories);
+
+    // Projects Section
+
+    const projectSection = document.getElementById("projects");
+
+    const projectList = projectSection.querySelector("ul");
+
+    // Loop Through Repositories
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+
+      project.innerHTML = `
+  <a href="${repositories[i].html_url}" target="_blank">
+    ${repositories[i].name}
+  </a>
+`;
+
+      projectList.appendChild(project);
+    }
+  })
+
+  .catch((error) => {
+    console.log("Error fetching repositories:", error);
+
+    const projectSection = document.getElementById("projects");
+
+    const errorMessage = document.createElement("p");
+
+    errorMessage.innerText = "Sorry, there was a problem loading the projects.";
+
+    projectSection.appendChild(errorMessage);
+  });
