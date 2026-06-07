@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather API App</title>
 
-    <link rel="stylesheet" href="openapi.css" />
+    <link rel="stylesheet" href="css/openapi.css" />
   </head>
   <body>
     <nav>
@@ -21,13 +21,14 @@
 
     <main>
       <div class="search-container">
+        <label for="cityInput">Enter a City:</label><br />
         <input type="text" id="cityInput" placeholder="Enter a city" />
         <button id="searchBtn">Search City</button>
       </div>
 
       <div class="button-container">
-        <button id="tempBtn">Show Temperature</button>
-        <button id="conditionBtn">Show Conditions</button>
+        <button id="tempBtn" disabled>Show Temperature</button>
+        <button id="conditionBtn" disabled>Show Conditions</button>
       </div>
 
       <div id="weatherData">
@@ -35,6 +36,6 @@
       </div>
     </main>
 
-    <script src="openapi.js"></script>
+    <script src="js/openapi.js"></script>
   </body>
 </html>

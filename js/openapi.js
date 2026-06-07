@@ -31,10 +31,14 @@ searchBtn.addEventListener("click", () => {
       longitude = data.results[0].longitude;
       cityName = data.results[0].name;
 
+      // Enable buttons after successful search //
+      tempBtn.disabled = false;
+      conditionBtn.disabled = false;
+
       weatherData.innerHTML = `
-                <h2>${cityName}</h2>
-                <p>City loaded successfully!</p>
-            `;
+    <h2>${cityName}</h2>
+    <p>City loaded successfully!</p>
+`;
     })
     .catch((error) => {
       weatherData.innerHTML = `<p>Error searching for city.</p>`;
