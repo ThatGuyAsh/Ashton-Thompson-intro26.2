@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API App</title>
+
+    <link rel="stylesheet" href="css/openapi.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Back Home</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Weather API Project</h1>
+      <p>Using the Open-Meteo Public API</p>
+    </header>
+
+    <main>
+      <div class="search-container">
+        <label for="cityInput">Enter a City:</label><br />
+        <input type="text" id="cityInput" placeholder="Enter a city" />
+        <button id="searchBtn">Search City</button>
+      </div>
+
+      <div class="button-container">
+        <button id="tempBtn" disabled>Show Temperature</button>
+        <button id="conditionBtn" disabled>Show Conditions</button>
+      </div>
+
+      <div id="weatherData">
+        <p>Search for a city and click a button.</p>
+      </div>
+    </main>
+
+    <script src="js/openapi.js"></script>
+  </body>
+</html>
