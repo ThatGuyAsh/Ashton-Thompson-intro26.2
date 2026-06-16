@@ -25,6 +25,8 @@ const skills = [
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
 
+skillsList.innerHTML = "";
+
 // Loop Through Skills
 skills.forEach((skillName) => {
   const skill = document.createElement("li");
@@ -139,6 +141,9 @@ fetch("https://api.github.com/users/ThatGuyAsh/repos")
     console.log("Error fetching repositories:", error);
 
     const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    projectList.innerHTML = "";
 
     const errorMessage = document.createElement("p");
     errorMessage.innerText = "Sorry, there was a problem loading the projects.";
